@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Click Board</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+
+    <body>
+    	<div id="wrapper">
+    		<div class="board-configuration">
+	    		<select class="config-list" onchange="boardSize(this.value);">
+	        		<option value="3x3">Easy (3 x 3)</option>
+	        		<option value="4x4">Medium (4 x 4)</option>
+	        		<option value="6x6">Difficult (6 x 6)</option>
+	        	</select>
+	        	<div class="timer">Time: <span class="time-sec">60</span></div>
+	        	<div class="score">Score: <span class="score-num">0</span></div>
+	        	<div class="score">Highest Score: <span class="highest-score-num">0</span></div>
+    		</div>
+    		<hr />
+    		<div class="boardWrapper">
+    			<ul class="board">
+    				
+    			</ul>
+    		</div>
+    	</div>
+    	<script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
